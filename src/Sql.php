@@ -53,7 +53,7 @@ class Sql implements ISql, JsonSerializable
     /**
      * @inheritDoc
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return ['sentence' => $this->getSentence(), 'params' => $this->getParams()];
     }
